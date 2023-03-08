@@ -1,0 +1,20 @@
+.main-input {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  color: var(--text-color-2);
+}
+.main-input__placeholder {
+  font-size: 0.8rem;
+  margin-left: var(--space-1);
+}
+.main-input__input {
+  font-size: 1rem;
+  color: inherit;
+  width: 100%;
+  padding: var(--space-2);
+  outline: transparent;
+  border: 0;
+  border-radius: var(--radius-1);
+  background: var(--bg-color-1);
+}

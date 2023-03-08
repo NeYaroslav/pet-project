@@ -1,0 +1,53 @@
+.main-button {
+  position: relative;
+  z-index: 1;
+  color: var(--text-color-1);
+  font-weight: 500;
+  padding: var(--space-2) var(--space-4);
+  border: 0;
+  outline: transparent;
+  background: transparent;
+  border-radius: var(--radius-1);
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+      50deg,
+      var(--accent-color-2),
+      var(--accent-color-1) 33.333%,
+      var(--accent-color-1) 66.666%,
+      var(--accent-color-2)
+    );
+    background-size: 300%;
+    background-position: left;
+    border-radius: var(--radius-1);
+    transition: background-position 0.2s ease, transform 0.2s ease,
+      outline 0.2s ease;
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+
+    &:hover::after,
+    &:focus::after {
+      background-position: right;
+    }
+    &:active::after,
+    &:focus-visible::after {
+      transform: scale(0.9);
+    }
+    &:focus-visible::after {
+      outline: var(--space-1) solid var(--bg-color-4);
+    }
+  }
+
+  &:disabled::after {
+    background-position: 50%;
+  }
+}
