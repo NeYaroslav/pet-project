@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react'
+import React, { forwardRef, memo } from 'react'
 import classes from './MainInput.module.scss'
 
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {}
@@ -23,4 +23,4 @@ const MainInput = forwardRef<HTMLInputElement, Props>(
   }
 )
 
-export default MainInput
+export default memo(MainInput)

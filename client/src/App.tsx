@@ -1,13 +1,8 @@
 import React from 'react'
-import { MainButton, MainInput } from './ui'
+import { Routing } from './routing'
 
 const App = () => {
-  return (
-    <>
-      <MainButton>Button</MainButton>
-      <MainInput placeholder="Username" className="" />
-    </>
-  )
+  return <Routing />
 }
 
 export default App

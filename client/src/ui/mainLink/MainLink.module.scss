@@ -1,0 +1,18 @@
+.main-link {
+  color: var(--accent-color-2);
+  text-decoration: none;
+
+  .main-link__svg {
+    vertical-align: middle;
+    margin-left: var(--space-1);
+    transition: transform 0.2s ease;
+  }
+  &:hover .main-link__svg,
+  &:focus-visible .main-link__svg {
+    transform: translateX(calc(var(--space-1) * -1));
+  }
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+  }
+}

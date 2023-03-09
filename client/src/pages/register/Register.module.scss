@@ -1,0 +1,32 @@
+.register {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: var(--text-color-2);
+}
+.register__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+}
+.register__logo {
+  width: 12rem;
+  height: 2.5rem;
+  margin: var(--space-3) 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.register__link-wrapper {
+  margin: var(--space-3) 0;
+  max-width: 28rem;
+  text-align: center;
+}

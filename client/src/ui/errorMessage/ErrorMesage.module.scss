@@ -1,0 +1,12 @@
+.error {
+  color: var(--text-error-color);
+  background: var(--bg-error-color);
+  padding: var(--space-1);
+  line-height: 100%;
+  border-radius: var(--radius-1);
+  border: 1px solid var(--text-error-color);
+}
+.error__svg {
+  vertical-align: middle;
+  margin-right: var(--space-1);
+}
