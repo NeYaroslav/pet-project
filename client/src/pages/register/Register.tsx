@@ -13,8 +13,7 @@ const Register: React.FC = () => {
         </div>
         <RegisterForm />
         <p className={classes['register__link-wrapper']}>
-          Do you already have an account?{' '}
-          <MainLink to="/login">log in</MainLink>
+          Do you already have an account? <MainLink to="/">log in</MainLink>
         </p>
       </div>
     </main>

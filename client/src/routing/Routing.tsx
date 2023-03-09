@@ -1,11 +1,11 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Register } from '../pages'
+import { Login, Register } from '../pages'
 
 const Routing = () => {
   return (
     <Routes>
-      <Route path="/" element={<>log in</>} />
+      <Route path="/" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/home">
         <Route path="" element={<>home</>} />

@@ -16,5 +16,13 @@
   outline: transparent;
   border: 0;
   border-radius: var(--radius-1);
-  background: var(--bg-color-1);
+  background: linear-gradient(to right, var(--accent-color-2), var(--accent-color-1)), var(--bg-color-1);
+  background-repeat: no-repeat;
+  background-size: 0 0;
+  background-position: bottom center;
+  transition: background-size .2s ease;
+
+  &:focus {
+    background-size: 100% var(--space-1);
+  }
 }
